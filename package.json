@@ -1,0 +1,12 @@
+{
+  "name": "laboratorio-carla-v2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Laboratório Carla: GED e ERP estáticos e fictícios para treinamento.",
+  "scripts": {
+    "start": "http-server -p 8080"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,4 @@
+window.period=1;function withPeriod(page){return page}
+function renderNav(active){let isGed=active==='ged',isErp=active==='erp';let sidebar=document.querySelector('#sidebar');sidebar.innerHTML=`<div class="brand">${isGed?'GED • Projetos':isErp?'ERP • Financeiro':'Laboratório de IA'}<small>Ambiente de treinamento fictício</small></div><a href="${withPeriod(isGed?'ged.html':isErp?'erp.html':'index.html')}" class="active">▤ <span>${isGed?'Área de projetos':isErp?'Medições e notas':'Visão geral'}</span></a><a href="${withPeriod(isGed?'erp.html':'ged.html')}" target="_blank" rel="noopener">↗ <span>Abrir ${isGed?'ERP':'GED'} em outra aba</span></a><div class="foot">Cenário Carla • dados fictícios<br>GED e ERP são sistemas independentes.</div>`;}
+function status(s){return `<span class="status" data-state="${escapeHTML(s)}">${escapeHTML(s)}</span>`}
+function project(id){return LAB.projects.find(p=>p.id===id)}
